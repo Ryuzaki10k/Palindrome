@@ -1,2 +1,11 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+print('Enter your word')
+s= str(input())
+a=len(s)
+b=0
+for i in range(0,a):
+    if s[i]==s[a-1-i]:
+        b+=1  
+if b==a:
+    print('palindrome')
+else:
+    print('Not palindrome')
